@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> WEB PAGE</title>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="icon-bar">
+     <a href="#on"><i class="fa fa-home"></i>Home</a>
+     <a href= "aboutus"><i class="fa fa-user"></i>About us</a>
+     <a href="#tw"><i class="fa fa-th"></i>Content</a>
+     <a href="#th"><i class="fa fa-envelope"></i>Contact</a>
+   </nav>
+    <div class="else">
+    <div class="top" id="on">
+      <video src={{ url_for('static', filename="smoke.mp4") }} autoplay muted>
+
+      </video>
+       <h1>
+          <span>O</span>
+          <span>C</span>
+          <span>R</span>
+          <p>-Optical Character Recognition</p>
+       </h1>
+     </div>
+    <div class="mid" id="tw">
+      <div>
+         <div class="user">
+          <br><br><br><br><br>
+         </div>
+         <div class="user1">
+        <h6>"Alone we can do so little,<br>together we can do so much"</h6>
+        </div>
+
+         <div class="user2">
+           <h6>"Know more about our<br>project"</h6>
+         </div>
+
+         <div class="user3">
+           <h6> "Try our app!!! "</h6>
+         </div>
+          <div class="cr">
+            <div class="b">
+             <div class="ic">
+              <i class="fa fa-user" aria-hidden="true"></i>
+             </div>
+             <div class="ct">
+                <h3>About us</h3>
+
+             </div>
+             <br>
+                <button onclick="window.location.href='aboutus';">Click Here</button>
+            </div>
+
+           <div class="b">
+             <div class="ic">
+               <i class="fa fa-wpforms" aria-hidden="true"></i>
+             </div>
+             <div class="ct">
+               <h3>Description</h3>
+             </div>
+             <br>
+               <button onclick="window.location.href='info';">Click Here</button>
+           </div>
+
+           <div class="b">
+             <div class="ic">
+               <i class="fa fa-folder" aria-hidden="true"></i>
+             </div>
+             <div class="ct">
+               <h3>Web App</h3>
+             </div>
+              <br>
+               <button onclick="window.location.href='form';">Click Here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="foot" id="th">
+       <h2> MAIL US AT!
+         <br>
+         <i class="fa fa-envelope" aria-hidden="true"></i>
+        </br>
+        <form class="mailus" action="mailusto:kavyavemuri05@gmail.com" method="post">
+          <input type="email" placeholder="Enter your email">
+          <button type="button">Subscribe</button>
+       </form>
+     </h2>
+    </footer>
+  </div>
+</body>
+</html>

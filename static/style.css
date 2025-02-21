@@ -1,0 +1,321 @@
+body{
+  margin: 0;
+  padding:0;
+}
+
+
+.icon-bar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 25px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+
+
+.top{
+  height:auto;;
+  width:auto;
+  background-color: #000;
+
+}
+video{
+
+  object-fit: cover;
+}
+h1{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top:50%;
+  right:5%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  color: #ddd;
+  font-size: 5em;
+  font-family: sans-serif;
+  letter-spacing: 0.2em;
+
+}
+h1 span
+{
+  display: inline-block;
+  animation: animate 1s linear forwards;
+}
+@keyframes animate
+{
+   0%
+   {
+     opacity:0.1;
+     transform: rotateY(90deg);
+     filter: blur(10px);
+   }
+   100%
+   {
+     opacity: 1;
+     transform: rotateY(0deg);
+     filter: blur(0);
+   }
+}
+h1 span:nth-child(1)
+{
+  animation-delay: 1.6s;
+}
+h1 span:nth-child(2)
+{
+  animation-delay: 2s;
+}
+h1 span:nth-child(3)
+{
+  animation-delay: 2.5s;
+}
+h1 span:nth-child(4)
+{
+  animation-delay:3s;
+}
+h1 span:nth-child(5)
+{
+  animation-delay:3.5s;
+}
+h1 span:nth-child(6)
+{
+   animation-delay:4s;
+ }
+
+
+ p{
+   font-size: 0.5em;
+   font-style: italic;
+
+ }
+
+
+
+.mid {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  position:relative;
+  background-image: url("mid.jpg");
+}
+
+.cr{
+  width: 100%;
+  position: relative;
+   right:40%;
+   bottom:400px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  grid-gap:120px;
+  margin: auto 0;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .cr {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .cr {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .cr {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px)
+{
+  .cr {
+    width: 1140px;
+  }
+}
+
+.cr .b{
+  position: relative;
+  left:450px;
+  top:300px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.cr .b .ic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.cr .b:hover .ic{
+  top: 20px;
+  left: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.cr .b .ic .fa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+  transition: 0.5x;
+  color: #fff;
+}
+
+.cr .b:hover .ic .fa {
+  font-size: 40px;
+}
+
+.cr .b .ct {
+  position: absolute;
+  top: 50%;
+  height: calc(100% - 100px);
+  text-align:center;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.cr .b:hover .ct {
+  top: 100px;
+}
+
+.cr .b .ct h3 {
+  margin: 0 0 10px;
+  padding: 0;
+  color: #fff;
+  font-size: 24px;
+  text-align: right;
+  position: relative;
+  top: 30px;
+}
+
+.cr .b p {
+  margin: 0;
+  padding: 0;
+  color: #ddd;
+ font-size:40px;
+}
+
+.cr .b button{
+  position: relative;
+  top:230px;
+  left:100px;
+  font-size: 25px;
+}
+
+.cr .b:nth-child(1) .ic {
+  background-color: #09307a ;
+}
+
+.cr .b:nth-child(1) {
+  background-color: #335aa3;
+}
+
+.cr .b:nth-child(2) .ic {
+  background-color: #23798e;
+}
+
+.cr .b:nth-child(2) {
+  background-color: #328fa5;
+}
+
+.cr .b:nth-child(3) .ic {
+  background-color: #18b8a7;
+}
+
+.cr .b:nth-child(3) {
+  background-color: #66ccca;
+}
+
+.foot{
+  background: linear-gradient(to bottom left, #000000 1%, #ffffff 150%);
+  height:350px;
+  position: relative;
+  bottom: 35px;
+
+}
+
+h2{
+  text-align: center;
+  position: relative;
+  top:50px;
+  font-size: 2.5em;
+}
+
+.mailus{
+  width:800px;
+  position: relative;
+  top: 50%;
+  left:20%;
+  padding:5px;
+  color:white;
+}
+
+
+.user1{
+  font-size:35px;
+  position: relative;
+  top:115px;
+  font-style: black chancery;
+  color:white;
+}
+
+.user2{
+  font-size: 35px;
+  position: relative;
+  top:10px;
+  left:440px;
+  font-style: Lucida;
+  color:white;
+}
+
+.user3{
+  font-size: 35px;
+  position: relative;
+  top:-100px;
+  left:900px;
+  font-style: Comic Sans MS;
+  color:white;
+}
+
+.user{
+  font-size:20px;
+  position: absolute;
+  font-style: oblique;
+  color:white;
+}
+
+button{
+  background: #e8faf3;
+  border-radius: 50px;
+
+}
